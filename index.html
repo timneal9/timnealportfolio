@@ -4,19 +4,349 @@
 <head>
 	<title>Tim Neal</title>
 	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<header>
-		<h1>Welcome to my portfolio</h1>
+		<nav class="navBar">
+			<div class="navBackground">
+				<div class="navBar">
+					<!-- iPhone &#&#128241 -->
+					<h2 class="nameInNav">&#9749 Tim Neal</h2>
+					<div class="navBarListDiv">
+						<ul class="navBarList">
+							<li class="nav-item">
+								<a href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#projects">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="resume" href="resume/TimNealResume2020.pdf" target="_blank">Resume</a>
+							</li>
+							<li class="nav-item">
+								<a href="mailto:tim_neal@me.com">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
 	</header>
 
 	<main>
-		<p>This is a website that showcases my projects</p>
+		<!-- <hr> -->
+		<table class="aboutMeTable">
+			<tr class="aboutMeRow">
+				<td class="aboutMeCol" colspan="2">
+					<h1 class="nameHeader" id="about">Tim Neal</h1>
+				</td>
+			</tr>
+			<!-- <tr>
+				<td class="aboutMeCol" colspan="2">
+					<p class="nameSubHeader">Developer - Sun Devil - Coffee Lover</p>
+				</td>
+			</tr> -->
+			<tr class="aboutMeRow">
+				<td class="aboutMeCol">
+					<img src="IMG_0411.JPG" alt="Profile Image" class="profileImage">
+				</td>
+				<td class="aboutMeCol">
+					<p class="aboutMeText">
+						I am Junior Software Developer with an BS Computer Information Systems degree (class of 2020). My course projects have included JavaScript, Python, SQL, and Java languages. I presently support Swift projects as a Quality Assurance Engineer intern at Starbucks Coffee Company. I am beginning Graduate studies in Computer Science at ASU this fall.
+					</p>
+				</td>	
+			</tr>
+		</table>
+		<br>
+		<hr>
+		<br>
+		<!-- <h2 class="projectsHeader" id="projects">Projects</h2> -->
+		<!-- <p class="projectSectionDescription">
+			Here are some projects I've created throughout my ASU undergrade. The projects were built across various languages.
+		</p> -->
+		
+		<h2 class="projectsHeader" id="projects">Projects</h2>
+		<table class="projectsTable" >
+			<div class="jsProjects">
+				<img src="images/js.jpg" alt="JS Logo" class="logos">
+				<tr class="projectRow">
+					<td class="projectLanguage" colspan="2">
+						<!-- <h2>JavaScript</h2> -->
+
+					</td>
+				</tr>
+				<tr class="projectRow">
+					<td class="projectCol">
+						<div class="calculatorDiv">
+							<table class="calculatorTable">
+						        <tr class="calculatorRow">
+						          <td class="result" id="result" colspan="4">
+						            0
+						          </td>
+						        </tr>
+
+						        <tr class="calculatorRow">
+						          <td class="calculatorCol">
+						            <button type="button" id="clearButton">C</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="powerButton">x^2</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="randButton">Rand</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="divideButton">/</button>
+						          </td>
+						        </tr>
+
+						        <tr class="calculatorRow">
+						          <td class="calculatorCol">
+						            <button type="button" id="sevenButton">7</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="eightButton">8</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="nineButton">9</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="multiplyButton">*</button>
+						          </td>
+						        </tr>
+
+						        <tr class="calculatorRow">
+						          <td class="calculatorCol">
+						            <button type="button" id="fourButton">4</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="fiveButton">5</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="sixButton">6</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="minusButton">-</button>
+						          </td>
+						        </tr>
+
+						        <tr class="calculatorRow">
+						          <td class="calculatorCol">
+						            <button type="button" id="oneButton">1</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="twoButton">2</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="threeButton">3</button>
+						          </td>
+						          <td class="calculatorCol" rowspan="2">
+						            <button type="button" class="plus" id="plusButton">+</button>
+						          </td>
+						        </tr>
+
+						        <tr class="calculatorRow">
+						          <td colspan="2">
+						            <button type="button" class="zero" id="zeroButton">0</button>
+						          </td>
+						          <td class="calculatorCol">
+						            <button type="button" id="equalsButton">=</button>
+						          </td>
+						        </tr>
+						      </table>
+						</div>
+					</td>
+					<td class="projectCol">
+						<p class="projectDescription">
+							Functioning calculator webapp using JavaScript to handle click events and calculations. Calculator UI was designed using HTML and CSS.<br>Try it out!
+							<ul>
+								<li>Button clicks are stored as one long calculation, until the = is pressed (1+2+3=6)</li>
+								<li>Rand generates a random < 0 number up to 5 decimals.</li>
+								<li>"C" button sets the calculator display to "0" and clears the previously clicked buttons</li>
+							</ul>
+						</p>
+					</td>
+				</tr>
+
+				<tr class="projectRow">
+					<td class="projectCol" colspan="1">
+						<div id="retirementCaclulatorId">
+					        <h3 class="center">Retirement Calculator</h3>
+					        <form id="inputFormId">
+					            <table id="inputTableId" class="center">
+					                <tr>
+					                    <td>
+					                        <input id="startingAgeId" type="number" value="" placeholder="Starting Age" min="18" max="100" step="1" required>
+					                    </td>
+					                    <td>
+					                        <input id="retirementAgeId" type="number" value="" placeholder="Retirement Age" min="18" max="100" step="1" required>
+					                    </td>
+					                </tr>
+
+					                <tr>
+					                    <td>
+					                        <input id="startingSalaryId" type="number" value="" placeholder="Starting Salary" min="0" step="1" required>
+					                    </td>
+					                    <td>
+					                        <input id="annualSavingsId" type="number" value="" placeholder="Annual Savings%" min=0.0 max="100.0" step="any" required>
+					                    </td>
+					                </tr>
+
+					                <tr>
+					                    <td>
+					                        <input id="annualRaiseId" type="number" value="" placeholder="Annual Raise%" min=0.0 max="100.0" step=".1" required>
+					                    </td>
+					                    <td>
+					                        <input id="interestRateId" type="number" value="" placeholder="Interest Rate%" min=0.0 max="100.0" step=".01" required>
+					                    </td>
+					                </tr>
+					                
+					                <!-- Buttons -->
+					                <tr id="retirementButtonRowId">
+					                    <td colspan="2" id="retirementButtonsCellID">
+					                        <button id="clearButtonId" type="button" onclick="clearInputs(this.form)">Clear</button>
+					                        <button id="defaultsButtonId" type="button" onclick="loadDefaults(this.form)">Defaults</button>
+					                        <button id="makeMeRichButtonId" type="button" onclick="runCalculations(this.form)">Calculate</button>
+					                    </td>
+					                </tr>
+
+					            </table>
+					        </form>
+
+					        <!-- Summary Table with results of input form -->
+					        <table id="summaryTableId" class="center">
+					            <tr>
+					                <td class="rightAlign monospace" id="yearsToInvestCellId">999,999</td>
+					                <td class="leftAlign">Years to Invest</td>
+					            </tr>
+					            <tr>
+					                <td class="rightAlign monospace" id="retirementCellId">999,999</td>
+					                <td class="leftAlign">Retirement Fund</td>
+					            </tr>
+					            <tr>
+					                <td class="rightAlign monospace" id="salaryCellId">999,999</td>
+					                <td class="leftAlign">Lifetime Salary</td>
+					            </tr>
+					            <tr>
+					                <td class="rightAlign monospace" id="savingsCellId">999,999</td>
+					                <td class="leftAlign">Total Saved</td>
+					            </tr>
+					            <tr>
+					                <td class="rightAlign monospace" id="interestCellId">999,999</td>
+					                <td class="leftAlign">Earned Interest</td>
+					            </tr>
+					        </table>
+					    </div>	
+					</td>
+					<td class="projectCol">
+						<p class="projectDescription">
+							User inputs are used to calculate their potiential retirement fund in this JS webapp. Users are able to clear all fields to start again or insert default values.<br>Try it out!
+							<ul>
+								<li>For loop is used to calculate annual savings, raises, and interest gained.</li>
+								<li>Clicking the Calculate button with empty fields will prompt an error alert.</li>
+								<li>Element IDs are used to manipulate cell data to display calculation results.</li>
+							</ul>
+						</p>
+					</td>
+				</tr>
+			</div>
+
+			<div class="pythonProjects">
+
+				<tr class="projectRow">
+					<td class="projectLanguage" colspan="2">
+						<!-- <h2>Python</h2> -->
+						<img src="images/python.png" alt="Python Logo" class="logos">
+					</td>
+				</tr>
+				<tr class="projectRow">
+					<td class="projectCol">
+						<div class="tictactoeContainer">
+							<video class="tictactoe" height="300" controls muted>
+								<source src="videos/TicTacToe.mov" type="video/mp4">
+							</video>
+						</div>
+					</td>
+					<td class="projectCol">
+						<p class="projectDescription">
+							This Tic Tac Toe game was created using Python and tkinter widgets. The game is a fully functional GUI displayed within a window.<br>Play video to see demo!
+							<ul>
+								<li>Each button click will alternate the player's turn.</li>
+								<li>After 3 turns, each button click will prompt the program to check for a winner.</li>
+								<li>Program checks possible winning combinations with what plays have been made.</li>
+								<li>Winner is announced through a window alert.</li>
+							</ul>
+						</p>
+					</td>
+				</tr>
+			</div>
+
+			<div class="javaProjects">
+				<tr class="projectRow">
+					<td class="projectLanguage" colspan="2">
+						<img src="images/java.png" alt="Java Logo" class="logos">
+					</td>
+				</tr>
+				
+				<tr class="projectRow">
+					<td class="projectCol" colspan="2" id="javaDescription">
+						<p class="projectDescription">
+							This program was a final project for my Business Information Systems Development course at ASU. This console program uses object-oriented programming to manage the inventory of a library. Play video to see demo!
+							<ul>
+								<li>List of menu options uses a switch statement to handle the selected option.</li>
+								<li>A device class is used to create new devices, requiring the SKU and Name of the device.</li>
+								<li>Getters in the device class are used to receive device information. Setters are used to update device data.</li>
+								<li>Object oriented programming was used to have many instances of Device</li>
+							</ul>
+						</p>
+					</td>
+				</tr>
+
+				<tr class="projectRow">
+					<td class="projectCol" colspan="2">
+						<video class="javaLibrarySystem" height="400" controls>
+							<source src="videos/javaLibrarySystem.m4v" type="video/mp4">
+						</video>
+					</td>
+				</tr>
+				
+			</div>
+
+
+			<div class="htmlProjects">
+				<tr class="projectRow">
+					<td class="projectLanguage" colspan="2">
+						<img src="images/html.png" alt="HTML Logo" class="logos" id="htmlLogoId">
+					</td>
+				</tr>
+				<tr class="projectRow">
+					<td class="projectCol" colspan="2">
+						<p class="projectDescription">
+							HTML and CSS have been used within the JavaScript web applications featured in the JS section. Using HTML, I have designed and prototyped static web apps that are ready for JavaScript implementation. CSS has been the primary styling tool for my websites and web apps. Using JavaScript I am able to maniplulate the HTML DOM for user interactivity. 
+							<ul>
+								<li>This portfolio website was designed and built using HTML, CSS, and JS.</li>
+								<li>HTML used to create websites and web apps. Images, buttons, and input fields have allowed for user interaction.</li>
+								<li>CSS has been added to create appealing websites and web apps.</li>
+								<li>IDs are created for HTML elements to allow for JS manipulation.</li>
+							</ul>
+						</p>
+					</td>
+				</tr>
+			</div>
+		</table>
+
+		<hr>
+		<script src="script.js"></script>
+		<script type="text/javascript" src="./retirementCalculator.js"></script>
 	</main>
 
 	<footer>
-		<p>Created by Tim Neal</p>
+		<a href="https://www.linkedin.com/in/timothycneal/" target="_blank">
+			<img src="images/linkedIn.png" alt="LinkedIn Logo" class="socialMedia">
+		</a>
+		<p>Copyright &copy Tim Neal 2020</p>
 	</footer>
 </body>
 
