@@ -19,7 +19,7 @@ Personal Projects
 
 ## Contact Me
 You may email me at: 
-```bash tim_neal@me.com ```
+```tim_neal@me.com ```
 
 ## Websites
 [Portfolio](https://www.timneal.me)
